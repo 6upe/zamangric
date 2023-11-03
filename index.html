@@ -1,42 +1,1219 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="description" content="ZAMANGRIC CAPITAL CORP - Connecting Government, Industry, and Community for Infrastructure & Agriculture Projects Over $1 Billion. Fostering sustainable development and partnerships.">
-        <meta name="keywords" content="ZAMANGRIC CAPITAL CORP, Infrastructure, Agriculture, Funding, Partnership, Development">
-        <meta name="author" content="ZAMANGRIC CAPITAL CORP">
-        <link rel="icon" href="./zamangric-logo.png" type="image/x-icon">
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-        <title>ZAMANGRIC CAPITAL CORP | Official Website</title>
-    </head>
-    
-    <style>
-        .logo-card {
-            max-width: 300px;
-            margin: 0 auto;
-        }
-    </style>
-</head>
-<body>
-    <div class="container mt-5">
-        <div class="row">
-            <div class="col-md-6 offset-md-3">
-                <div class="alert alert-success" role="alert">
-                    Domain name Registered!
-                </div>
-                <div class="alert alert-warning" role="alert">
-                    Web Hosting Subscribed!
-                </div>
-                <div class="alert alert-danger" role="alert">
-                    Website Not Found!
-                </div>
-                
-            </div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="ZAMANGRIC CAPITAL CORP - Connecting Government, Industry, and Community for Infrastructure & Agriculture Projects Over $1 Billion. Fostering sustainable development and partnerships."
+    />
+    <meta
+      name="keywords"
+      content="ZAMANGRIC CAPITAL CORP, Infrastructure, Agriculture, Funding, Partnership, Development"
+    />
+    <meta name="author" content="ZAMANGRIC CAPITAL CORP" />
+    <link rel="icon" href="./zamangric-logo.png" type="image/x-icon" />
+    <title>ZAMANGRIC | Official Website</title>
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600&family=Inter:wght@700;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Icon Font Stylesheet -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet" />
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet" />
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <div class="container-xxl bg-white p-0">
+      <!-- Spinner Start -->
+      <div
+        id="spinner"
+        class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center"
+      >
+        <div
+          class="spinner-border text-primary"
+          style="width: 3rem; height: 3rem"
+          role="status"
+        >
+          <span class="sr-only">Loading...</span>
         </div>
+      </div>
+      <!-- Spinner End -->
+
+
+      <!-- Navbar Start -->
+      <div class="container-fluid nav-bar bg-transparent">
+        <nav class="navbar navbar-expand-lg bg-white navbar-light py-0 px-4">
+          <a
+            href="index.html"
+            class="navbar-brand d-flex align-items-center text-center"
+          >
+            <div class="icon p-2 me-2">
+              <img
+                class="img-fluid"
+                src="./zamangric-logo.png"
+                alt="Icon"
+                style="width: 50px; height: 37px"
+              />
+            </div>
+            <div>
+              <h6 class="m-0 text-primary">ZAMANGRIC</h6>
+            </div>
+          </a>
+          <button
+            type="button"
+            class="navbar-toggler"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarCollapse"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <div class="navbar-nav ms-auto">
+              <a href="index.html" class="nav-item nav-link active">Home</a>
+              <a href="industry_overview.html" class="nav-item nav-link"
+                >Industry Overview</a
+              >
+              <a href="why_us.html" class="nav-item nav-link">Why Us!</a>
+              <a href="total_investment.html" class="nav-item nav-link"
+                >Total Investment</a
+              >
+              <a href="contact.html" class="nav-item nav-link">Contact</a>
+            </div>
+            <a data-toggle="modal"
+            data-target="#applicationModal"
+            data-title="Apply for Affiliate Membership" class="btn btn-primary px-3 d-none d-lg-flex"
+              >Apply Membership</a> <br>
+              <div
+              id="google_translate_element"
+              class="my-3 mx-3"
+            ></div>
+          </div>
+        </nav>
+      </div>
+      <!-- Navbar End -->
+
+      <!-- Header Start -->
+      <div class="container-fluid header bg-white p-0" style="margin-top: 3%;">
+        <div class="row g-0 align-items-center flex-column-reverse flex-md-row">
+          <div class="col-md-6 p-5 mt-lg-5">
+            <!-- Positively impacting our communities -->
+            <h1 class="display-5 animated fadeIn mb-4">
+              Positively <span class="text-primary"> Impacting</span> Our
+              communities
+            </h1>
+            <p class="animated fadeIn mb-4 pb-2">
+              Our objective is to provide our clients with an "I am assured"
+              experience when we are chosen to execute their projects.
+            </p>
+            <a href="" class="btn btn-primary py-3 px-5 me-3 animated fadeIn"
+              >Become a Member</a
+            >
+          </div>
+          <div class="col-md-6 animated fadeIn">
+            <div class="owl-carousel header-carousel">
+              <div class="owl-carousel-item">
+                <img class="img-fluid" src="img/new-img/farmer (1).jpg" alt="" />
+              </div>
+              <div class="owl-carousel-item">
+                <img class="img-fluid" src="img/new-img/farmer (2).jpg" alt="" />
+              </div>
+              <div class="owl-carousel-item">
+                <img class="img-fluid" src="https://img.freepik.com/premium-photo/money-farming_454541-313.jpg?w=740" alt="" />
+              </div>
+              <div class="owl-carousel-item">
+                <img class="img-fluid" src="img/new-img/farmer (3).jpg" alt="" />
+              </div>
+              <div class="owl-carousel-item">
+                <img class="img-fluid" src="img/new-img/farmer (4).jpg" alt="" />
+              </div>
+              <div class="owl-carousel-item">
+                <img class="img-fluid" src="img/new-img/farmer (5).jpg" alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Header End -->
+
+      <!-- Category Start -->
+      <div class="container-xxl py-5">
+        <div class="container">
+          <div
+            class="text-center mx-auto mb-5 wow fadeInUp"
+            data-wow-delay="0.1s"
+          >
+            <hr />
+            <h1 class="mb-3 my-3">About Us!</h1>
+
+            <p class="text-justify" style="text-align: justify">
+              At ZAMANGRIC CAPITAL CORP, we specialize in connecting government,
+              industry, and community to provide equity-funding capital for
+              infrastructure & Agriculture projects over $1Billion. Our seasoned
+              partners have long-term business relationships. These
+              relationships have resulted in Global partnership opportunities.
+
+              <br />
+              <br />
+              ZAMANGRIC CAPITAL CORP focuses on strategic alliances in the
+              infrastructure development sector. Mainly, in providing a better
+              solution for governments than the current P3 model, demonstrating
+              sustainable and predictable cash flows.
+            </p>
+          </div>
+          <div
+            class="row g-4 text-center"
+            style="
+              width: 100%;
+              flex-direction: row;
+              justify-content: space-between;
+            "
+          ><h1 class="mb-3">Our Vision</h1>
+            <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.1s">
+              <a
+                class="cat-item d-block bg-light text-center rounded p-3"
+                href=""
+              >
+                <div class="rounded p-4">
+                  <div class="icon mb-3">
+                    <!-- <img
+                      class="img-fluid"
+                      src="img/icon-apartment.png"
+                      alt="Icon"
+                    /> -->
+                  </div>
+                  <h6>Integrity</h6>
+                  <!-- <span>123 Properties</span> -->
+                </div>
+              </a>
+            </div>
+            <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.3s">
+              <a
+                class="cat-item d-block bg-light text-center rounded p-3"
+                href=""
+              >
+                <div class="rounded p-4">
+                  <div class="icon mb-3">
+                    <!-- <img
+                      class="img-fluid"
+                      src="img/icon-villa.png"
+                      alt="Icon"
+                    /> -->
+                  </div>
+                  <h6>Excellence</h6>
+                  <!-- <span>123 Properties</span> -->
+                </div>
+              </a>
+            </div>
+            <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.5s">
+              <a
+                class="cat-item d-block bg-light text-center rounded p-3"
+                href=""
+              >
+                <div class="rounded p-4">
+                  <div class="icon mb-3">
+                    <!-- <img
+                      class="img-fluid"
+                      src="img/icon-house.png"
+                      alt="Icon"
+                    /> -->
+                  </div>
+                  <h6>Responsibility</h6>
+                  <!-- <span>123 Properties</span> -->
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Category End -->
+
+      <div class="container-xxl py-5">
+        <div class="container">
+          <div
+            class="text-center mx-auto mb-5 wow fadeInUp"
+            data-wow-delay="0.1s"
+          >
+            <p style="text-align: justify">
+              Today, ZAMANGRIC CAPITAL CORP takes on the role of main contractor
+              for small to medium size projects and performs project management
+              services to co-ordinates specialist trades for
+              industrial/commercial projects. We also provide design inputs and
+              engineering solutions as value-add services to our clients.
+            </p>
+          </div>
+          <div
+            class="owl-carousel testimonial-carousel wow fadeInUp"
+            data-wow-delay="0.1s"
+          >
+            <div class="testimonial-item bg-light rounded p-3">
+              <div class="bg-white border rounded p-4">
+                <h4 class="mb-3">Our Mission!</h4>
+                <p>
+                  To benefit our membership by growing businesses and
+                  communities sustainably through co-operative principles.
+                </p>
+              </div>
+            </div>
+            <div class="testimonial-item bg-light rounded p-3">
+              <div class="bg-white border rounded p-4">
+                <h4 class="mb-3">Our Aim!</h4>
+                <p style="text-align: justify">
+                  We aim to deliver the dual objectives of competitive returns
+                  for shareholders, investors, partners, and maximum
+                  socio-economic benefits to the general Zambian landscape.
+                  <!-- The driving motivation was that it was
+                  evident, that the high levels of unemployment and poverty in
+                  Zambia and Angola were having devastating effects on the
+                  Zambian and Angolan citizen. -->
+                </p>
+              </div>
+            </div>
+            <div class="testimonial-item bg-light rounded p-3">
+              <div class="bg-white border rounded p-4">
+                <h4 class="mb-3">Our Vision!</h4>
+                <p>
+                  Positively impacting our communities.Through Promoting
+                  engagement through a culture of teamwork, camaraderie and
+                  learning and Being rooted in communities through local
+                  governance and strong financial performance.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="row container-xxl px-3"
+        style="flex-direction: row; width: 100%"
+      >
+        <div class="py-5">
+          <div class="container">
+            <div
+              class="text-center mx-auto mb-5 wow fadeInUp px-3"
+              data-wow-delay="0.1s"
+            >
+              <h1 class="mb-3">Investment</h1>
+              <p style="text-align: justify">
+                ZAMANGRIC CAPITAL CORP has planned investments of over five
+                years (2023-2035) for phase one interventions to accelerate the
+                development of financial inclusion through its commercializing
+                small-scale farmers through the implementation of an
+                agriculture, food processing marketable and sustainable 7
+                agricultural value chains in Zambia.
+              </p>
+            </div>
+            <div class="col-12 text-center">
+              <a class="btn btn-primary py-3 px-5" href="total_investment.html"
+                >View Total Investment</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <div class="py-5">
+          <div class="container">
+            <div
+              class="text-center mx-auto mb-5 wow fadeInUp px-3"
+              data-wow-delay="0.1s"
+            >
+              <h1 class="mb-3">Resilient Income Improvement</h1>
+              <p style="text-align: justify">
+                ZAMANGRIC CAPITAL CORP seeks, among other things, to improve
+                incomes, resilience of the informal sector, and farmers and
+                small-scale entrepreneurs by increasing production and
+                productivity across selected sectors.
+              </p>
+              <p style="text-align: justify">
+                ZAMANGRIC CAPITAL CORP was established by a group of Zambian
+                visionaries and entrepreneurs to use profitable enterprise as a
+                vehicle for significantly contributing to the socio-economic
+                dynamics of Zambia.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- About Start -->
+      <div class="container-xxl py-5">
+        <div class="container">
+          <div class="row g-5 align-items-center">
+            <div class="col-lg-6 wow fadeIn" data-wow-delay="0.1s">
+              <div class="about-img position-relative overflow-hidden p-5 pe-0">
+                <img class="img-fluid w-100" src="img/new-img/farmer (4).jpg" />
+              </div>
+            </div>
+            <div class="col-lg-6 wow fadeIn" data-wow-delay="0.5s">
+              <h1 class="mb-4">ZAMANGRIC, Zambia& Angola CO-OP Projects</h1>
+              <p class="mb-4">
+                Proposes to initially establish 6 large-scale agriculture
+                projects namely:
+              </p>
+              <p>
+                <i class="fa fa-check text-primary me-2"></i>Large Scale Dairy
+                Farm and processing plant
+              </p>
+              <p>
+                <i class="fa fa-check text-primary me-2"></i>Large-scale Chicken
+                Broiler Production and exports.
+              </p>
+              <p>
+                <i class="fa fa-check text-primary me-2"></i>Large-Scale
+                vegetable farming ( Green housed)
+              </p>
+              <p>
+                <i class="fa fa-check text-primary me-2"></i>Large-Scale Banana
+                Plantation
+              </p>
+              <p>
+                <i class="fa fa-check text-primary me-2"></i>Large-scale Barley
+                and wheat Farming
+              </p>
+              <a class="btn btn-primary py-3 px-5 mt-3" href="">Read More</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- About End -->
+
+      <!-- Property List Start -->
+      <div class="container-xxl py-5">
+        <div class="container">
+          <div class="row g-0 gx-5 align-items-end">
+            <div class="col-lg-6">
+              <div
+                class="text-start mx-auto mb-5 wow slideInLeft"
+                data-wow-delay="0.1s"
+              >
+                <h1 class="mb-3">ZAMANGRIC Membership Corporatives</h1>
+                <p style="text-align: justify">
+                  Agricultural corporation offers economic and social benefits
+                  including increased profits, cost savings, and improved
+                  product quality. These advantages can be observed shortly
+                  after forming a coporatice or gradually over time.
+                </p>
+              </div>
+            </div>
+
+            <div
+              class="col-lg-6 text-start text-lg-end wow slideInRight"
+              data-wow-delay="0.1s"
+            >
+              <ul class="nav nav-pills d-inline-flex justify-content mb-5">
+                <li class="nav-item me-2 my-2">
+                  <a
+                    class="btn btn-outline-primary active"
+                    data-bs-toggle="pill"
+                    href="#tab-1"
+                    >Categories</a
+                  >
+                </li>
+                <li class="nav-item me-2 my-2">
+                  <a
+                    class="btn btn-outline-primary"
+                    data-bs-toggle="pill"
+                    href="#tab-2"
+                    >Terms & Conditions</a
+                  >
+                </li>
+                <li class="nav-item me-0 my-2">
+                  <a
+                    class="btn btn-outline-primary"
+                    data-bs-toggle="pill"
+                    href="#tab-3"
+                    >Eligibility Criteria</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="tab-content">
+            <div id="tab-1" class="tab-pane fade show p-0 active">
+              <div class="row g-4">
+                <div
+                  class="col-lg-4 col-md-6 wow fadeInUp"
+                  data-wow-delay="0.1s"
+                >
+                  <div class="property-item rounded overflow-hidden">
+                    <div class="p-4 pb-0">
+                      <h5 class="text-primary mb-3">$350/Per Year</h5>
+                      <a class="d-block h5 mb-2" href="">Ordinary Membership</a>
+                      <p>
+                        <i class="fa fa-check text-primary me-2"></i>Legal
+                        Support
+                      </p>
+                      <p>
+                        <i class="fa fa-check text-primary me-2"></i
+                        >Loan/Capital 100,000 ZMW
+                      </p>
+                      <p>
+                        <i class="fa fa-check text-primary me-2"></i>Free health
+                        Insurance
+                      </p>
+                      <p>
+                        <i class="fa fa-check text-primary me-2"></i>Free
+                        Trainings/workshop
+                      </p>
+                      <p>
+                        <i class="fa fa-check text-primary me-2"></i>Free
+                        Membership Card
+                      </p>
+                      <p>
+                        <i class="fa fa-check text-primary me-2"></i>Free Flight
+                        Ticket / Food / Accomodation vacations
+                      </p>
+                    </div>
+                    <div class="d-flex border-top">
+                      <a class="btn btn-primary mx-5 my-3"  data-toggle="modal"
+                      data-target="#applicationModal"
+                      data-title="Apply for Affiliate Membership" 
+                        >Apply for Membership</a
+                      >
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="col-lg-4 col-md-6 wow fadeInUp"
+                  data-wow-delay="0.1s"
+                >
+                  <div class="property-item rounded overflow-hidden">
+                    <div class="p-4 pb-0">
+                      <h5 class="text-primary mb-3">$500/Per Year</h5>
+                      <a class="d-block h5 mb-2" href="">Associate Membership</a>
+                      <p>
+                        <i class="fa fa-check text-primary me-2"></i>Legal
+                        Support
+                      </p>
+                      <p>
+                        <i class="fa fa-check text-primary me-2"></i
+                        >Loan/Capital (100,000 ZMW To 5
+                        00,000 ZMW / 3,000,000KZ Το 6,000,000KZ)
+                        
+                      </p>
+                      <p>
+                        <i class="fa fa-check text-primary me-2"></i>Free health
+                        Insurance
+                      </p>
+                      <p>
+                        <i class="fa fa-check text-primary me-2"></i>Free
+                        Trainings/workshop
+                      </p>
+                      <p>
+                        <i class="fa fa-check text-primary me-2"></i>Free
+                        Membership Card
+                      </p>
+                      <p>
+                        <i class="fa fa-check text-primary me-2"></i>Free Flight
+                        Ticket / Food / Accomodation vacations
+                      </p>
+                    </div>
+                    <div class="d-flex border-top">
+                      <a class="btn btn-primary mx-5 my-3" href=""
+                        >Apply for Membership</a
+                      >
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="col-lg-4 col-md-6 wow fadeInUp"
+                  data-wow-delay="0.1s"
+                >
+                  <div class="property-item rounded overflow-hidden">
+                    <div class="p-4 pb-0">
+                      <h5 class="text-primary mb-3">$1,000/Per Year</h5>
+                      <a class="d-block h5 mb-2" href="">Affiliate Membership</a>
+                      <p>
+                        <i class="fa fa-check text-primary me-2"></i>Legal
+                        Support
+                      </p>
+                      <p>
+                        <i class="fa fa-check text-primary me-2"></i
+                        >Loan/Capital (1,000,000 ZMW To 6,000,000 ZMW / 6,000,000 Kz Το 23,000,000 KZ)
+                      </p>
+                      <p>
+                        <i class="fa fa-check text-primary me-2"></i>Free health
+                        Insurance
+                      </p>
+                      <p>
+                        <i class="fa fa-check text-primary me-2"></i>Free
+                        Trainings/workshop
+                      </p>
+                      <p>
+                        <i class="fa fa-check text-primary me-2"></i>Free
+                        Membership Card
+                      </p>
+                      <p>
+                        <i class="fa fa-check text-primary me-2"></i>Free Flight
+                        Ticket / Food / Accomodation vacations
+                      </p>
+                    </div>
+                    <div class="d-flex border-top">
+                      <a class="btn btn-primary mx-5 my-3"  data-toggle="modal"
+                      data-target="#applicationModal"
+                      data-title="Apply for Affiliate Membership" 
+                        >Apply for Membership</a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div id="tab-2" class="tab-pane fade show p-0">
+              <div class="row g-4">
+                <!-- Initial content (Criteria) -->
+                <div
+                  id="criteriaContent"
+                  style="text-align: start; margin: 0 30px"
+                >
+                  <p class="text-success fw-bold">
+                    ZAMANGRIC MEMBERSHIP CO-OP LOANS/TERMS OF CONDITIONS
+                  </p>
+                  <hr />
+                  <p class="text-success fw-bold">BORROW</p>
+                  <ul>
+                    <li>Zambia Citizen: 100, 000zmw To 6,000,000 Zmw</li>
+                    <li>Angolan Citizen: 500,000 Kz To 23,000,000 Kz</li>
+                    <li>8 Weeks Approval</li>
+                  </ul>
+
+                  <hr />
+                  <p class="text-success fw-bold">LOANS FACILITIES</p>
+                  <ul>
+                    <li>4 % Interest</li>
+                    <li>Angolan Citizen: 500,000 Kz To 23,000,000 Kz</li>
+                    <li>Flexible Payment Options</li>
+                    <li>80 % Off Applications Approved</li>
+
+                    <li>Long Term Loan Available</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <div id="tab-3" class="tab-pane fade show p-0">
+              <div class="row g-4 px-3">
+                <!-- CRITERIA CONTENT HERE... -->
+                <!-- Additional content (Terms and Conditions) -->
+                <div id="termsContent">
+                  <p class="text-success fw-bold">Eligibility Criteria</p>
+                  <ol>
+                    <li>One has to be a registered member</li>
+                    <li>Goods to be supplied to ZAMANGRIC.</li>
+                    <li>Our Services ZAMANGRIC Membership</li>
+                  </ol>
+                  <p class="text-success fw-bold">
+                    This co-op type provides services to agricultural
+                    enterprises:
+                  </p>
+                  <ol>
+                    <li>Transportation</li>
+                    <li>Storing</li>
+                    <li>Artificial Insemination</li>
+                    <li>Legal and Accounting Support</li>
+                    <li>Equipment Repair</li>
+                    <li>And more...</li>
+                  </ol>
+                  <p class="text-success fw-bold" style="text-align: justify">
+                    An agricultural co-op may also include financial
+                    organizations like banks, investment and credit unions
+                    granting loans or accepting deposits from its members at
+                    favorable interests.
+                  </p>
+
+                  <ol>
+                    <li>Business vintage: At least 2 years</li>
+                    <li>Work status: Self-employed or Civil servants</li>
+                    <li>Age: 24 years to 70 years*</li>
+                    <li>Document: Passport / NRC / Driving License</li>
+                    <li>Proof of business ownership</li>
+                    <li>Other financial documents.</li>
+                    <li>
+                      NATIONALITIES: Zambian citizen and Angola citizen Higher
+                      age limit is applicable at the time of loan maturity.
+                    </li>
+                  </ol>
+                </div>
+                <div class="col-12 text-center">
+                  <a class="btn btn-primary py-3 px-5"  data-toggle="modal"
+                  data-target="#applicationModal"
+                  data-title="Apply for Affiliate Membership" 
+                    >Apply for Membership</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Property List End -->
+
+      <!-- Call to Action Start -->
+      <div class="container-xxl py-5">
+        <div class="container">
+          <div class="bg-light rounded p-3">
+            <div
+              class="bg-white rounded p-4"
+              style="border: 1px dashed rgba(0, 185, 142, 0.3)"
+            >
+              <div class="row g-5 align-items-center">
+                <div class="col-lg-6 wow fadeIn" data-wow-delay="0.1s">
+                  <img
+                    class="img-fluid rounded w-100"
+                    src="img/new-img/founder.jpg"
+                    alt=""
+                  />
+                </div>
+                <div class="col-lg-6 wow fadeIn" data-wow-delay="0.5s">
+                  <div class="mb-4">
+                    <h1 class="mb-3">About Our Founder</h1>
+                    <p style="text-align: justify">
+                      Dr. Roberto Chiteta is an academic, visionary youth (
+                      Entrepreneur ) is Ambassador of Sunga Umone Group and also
+                      serves as Chief Relationship Officer at GIC Capital Corp.
+                      <!-- Dr. Chiteta had the vision of creating opportunities
+                      for individual and communities empowerment by establishing
+                      ZAMANGRIC CAPITAL CORP (Zambia and Angola Capital Corp)
+                      Through his vast network the business ZAMANGRIC CAPITAL
+                      CORP model aims to find Zambia AND ANGOLA. equity
+                      partners, sponsors and qualified staff to tap into local
+                      talent Entrepreneus. The talents will be groomed to become
+                      professional Entrepreneurial who will become inspirations
+                      in the communities they come. Consequently, they become
+                      drivers for other endeavors all aimed to mutually benefit
+                      the company, the local farmers, Entrepreneur etc as well
+                      as the communities. -->
+                    </p>
+                    <!-- <p>
+                      Through the influence of the good farming', it is hoped
+                      that the community will benefit from various opportunities
+                      through projects that will come with the corporatives
+                      corporate social responsibility (CSR). Among these it is
+                      hoped that the community will benefit from agriculture,
+                      education , Construction, health and other sports.
+                    </p>
+                    <p  style="text-align: justify;">
+                      The Company is also seeking equity partners to be drivers
+                      of this dream with benefits ranging from being part of a
+                      thriving youth development platform, be custodians and
+                      agents for players, experience coaching education from
+                      academy to full professional and also enjoy the benefits
+                      and access to use ZAMANGRIC CAPITAL CORP intellectual
+                      property.
+                    </p> -->
+                    <p style="text-align: justify">
+                      Dr. Chiteta holds a Degree in Business Administration from
+                      the UK, A Master's Degree in Geotechnical Engineering from
+                      China; and a PHD in Criminal Justice from Washington,
+                      <!-- United States of America. He is also a competent project
+                      manager and a certified CISCO Licentiate from the
+                      University of Zambia. His skill set encompasses start-ups,
+                      business development, marketing business strategy,
+                      business planning, finance, entrepreneurship, new business
+                      development and customer relationship management among
+                      others. -->
+                    </p>
+
+                    <a href="">read more</a>
+                  </div>
+                  <a href="tel:+260951500887" class="btn btn-primary py-3 px-4 me-2 my-2"
+                    ><i class="fa fa-phone-alt me-2"></i>Make A Call</a
+                  >
+                  <a href="" class="btn btn-dark py-3 px-4 my-2"
+                    ><i class="fa fa-calendar-alt me-2"></i>Get Appoinment</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Call to Action End -->
+
+      <div class="container mt-4">
+        <h2 class="text-center my-5">Our Partners</h2>
+        <div class="row">
+          <div class="col-md-4 col-sm-6 mb-4">
+            <img
+              src="./img/new-img/partner 2.jpg.png"
+              alt="partner 1"
+              class="img-fluid"
+            />
+          </div>
+          <div class="col-md-4 col-sm-6 mb-4">
+            <img
+              src="./img/new-img/partner 1.jpg"
+              alt="partner 2"
+              class="img-fluid"
+            />
+          </div>
+        </div>
+      </div>
+  
+  
+      <div class="container mt-4">
+        <h2 class="text-center my-5">Our Investors</h2>
+        <div class="row">
+          <div class="col-md-4 col-sm-6 mb-4 text-center">
+            <img
+              src="./img/new-img/sponsor 11.jpeg"
+              alt="Sponsor 1"
+              class="img-fluid"
+            />
+          </div>
+          <div class="col-md-4 col-sm-6 mb-4 text-center">
+            <img
+              src="./img/new-img/sponsor 22.png"
+              alt="Sponsor 2"
+              class="img-fluid"
+            />
+          </div>
+          <div class="col-md-4 col-sm-6 mb-4 text-center">
+            <img
+              src="./img/new-img/sponsor 33.jpeg"
+              alt="Sponsor 3"
+              class="img-fluid"
+            />
+          </div>
+        </div>
+      </div>
+
+      <!-- Footer Start -->
+      <div
+        class="container-fluid bg-dark text-white-50 footer pt-5 mt-5 wow fadeIn"
+        data-wow-delay="0.1s"
+      >
+        <div class="container py-5">
+          <div class="row g-5">
+            <div class="col-lg-3 col-md-6">
+              <h5 class="text-white mb-4">Get In Touch</h5>
+              <p class="mb-2">
+                <i class="fa fa-map-marker-alt me-3"></i>Lusaka, Zambia | Luanda
+                Angola
+              </p>
+              <p class="mb-2">
+                <i class="fa fa-phone-alt me-3"></i>+260 951 500 887 | +244 933
+                622 909
+              </p>
+              <p class="mb-2">
+                <i class="fa fa-envelope me-3"></i>info@zamangric.org
+              </p>
+              <div class="d-flex pt-2">
+                <a
+                  class="btn btn-outline-light btn-social"
+                  href="https://web.facebook.com/profile.php?id=61552565957075"
+                  ><i class="fab fa-facebook-f"></i
+                ></a>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6">
+              <h5 class="text-white mb-4">Quick Links</h5>
+              <a class="btn btn-link text-white-50" href="why_us.html"
+                >Why Us?</a
+              >
+              <a class="btn btn-link text-white-50" href="contact.html"
+                >Contact Us</a
+              >
+              <a class="btn btn-link text-white-50" href="total_investment.html"
+                >Total Investment</a
+              >
+              <a class="btn btn-link text-white-50" href="index.html">Home</a>
+            </div>
+
+            <div class="col-lg-3 col-md-6">
+              <h5 class="text-white mb-4">Recieve Our Updates via Email</h5>
+              <p>Stay up to date with our current loan Offers</p>
+              <div class="position-relative mx-auto" style="max-width: 400px">
+                <input
+                  class="form-control bg-transparent w-100 py-3 ps-4 pe-5"
+                  type="text"
+                  placeholder="Your email"
+                />
+                <button
+                  type="button"
+                  class="btn btn-primary py-2 position-absolute top-0 end-0 mt-2 me-2"
+                >
+                  SignUp
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="copyright">
+            <div class="row">
+              <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                &copy; <a class="border-bottom" href="#">zamangric.org</a>, All
+                Right Reserved.
+<br>
+                <!--/*** This template is free as long as you keep the footer author’s credit link/attribution link/backlink. If you'd like to use the template without the footer author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. ***/-->
+                Designed By
+                <a class="border-bottom" href="https://htmlcodex.com"
+                  >HTML Codex</a
+                > <br>
+                Customized By
+                <a class="border-bottom" href="https://pikozm.vercel.app"
+                  >Piko Tech Solutions</a
+                >
+              </div>
+              <div class="col-md-6 text-center text-md-end">
+                <div class="footer-menu">
+                  <a href="">Home</a>
+                  <a href="">Contact Us!</a>
+                  <a href="">Help & Support</a>
+                  <a href="">FQAs</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Footer End -->
+
+      <!-- MODALS START HERE -->
+      <!--Membership Apply Modal -->
+      <div
+        class="modal fade"
+        id="applicationModal"
+        tabindex="-1"
+        role="dialog"
+        aria-labelledby="applicationModalLabel"
+        aria-hidden="true"
+        style="z-index: 9999;"
+      >
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h6
+                class="modal-title text-secondary px-3"
+                id="applicationModalLabel"
+              >
+                Membership Application Form
+              </h6>
+              <img
+                class="mx-5"
+                width="100px"
+                src="./zamangric-logo.png"
+                alt="#"
+              />
+              <button
+                type="button"
+                class="close"
+                data-dismiss="modal"
+                aria-label="Close"
+              >
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <div class="sucess-message"></div>
+
+              <div class="formApp">
+                <form id="applicationForm" enctype="multipart/form-data">
+                  <div
+                    style="
+                      display: flex;
+                      align-items: center;
+                      justify-content: space-around;
+                    "
+                  >
+                    <div class="form-group">
+                      <select class="form-control" id="country">
+                        <option value="none" id="country" class="form-control">
+                          Country
+                        </option>
+                        <option value="Algeria">Algeria</option>
+                        <option value="Angola">Angola</option>
+                        <option value="Benin">Benin</option>
+                        <option value="Botswana">Botswana</option>
+                        <option value="Burkina Faso">Burkina Faso</option>
+                        <option value="Burundi">Burundi</option>
+                        <option value="Cabo Verde">Cabo Verde</option>
+                        <option value="Cameroon">Cameroon</option>
+                        <option value="Central African Republic">
+                          Central African Republic
+                        </option>
+                        <option value="Chad">Chad</option>
+                        <option value="Comoros">Comoros</option>
+                        <option value="Congo (Brazzaville)">
+                          Congo (Brazzaville)
+                        </option>
+                        <option value="Congo (Kinshasa)">
+                          Congo (Kinshasa)
+                        </option>
+                        <option value="Cote d'Ivoire">Cote d'Ivoire</option>
+                        <option value="Djibouti">Djibouti</option>
+                        <option value="Egypt">Egypt</option>
+                        <option value="Equatorial Guinea">
+                          Equatorial Guinea
+                        </option>
+                        <option value="Eritrea">Eritrea</option>
+                        <option value="Eswatini">Eswatini</option>
+                        <option value="Ethiopia">Ethiopia</option>
+                        <option value="Gabon">Gabon</option>
+                        <option value="Gambia">Gambia</option>
+                        <option value="Ghana">Ghana</option>
+                        <option value="Guinea">Guinea</option>
+                        <option value="Guinea-Bissau">Guinea-Bissau</option>
+                        <option value="Kenya">Kenya</option>
+                        <option value="Lesotho">Lesotho</option>
+                        <option value="Liberia">Liberia</option>
+                        <option value="Libya">Libya</option>
+                        <option value="Madagascar">Madagascar</option>
+                        <option value="Malawi">Malawi</option>
+                        <option value="Mali">Mali</option>
+                        <option value="Mauritania">Mauritania</option>
+                        <option value="Mauritius">Mauritius</option>
+                        <option value="Morocco">Morocco</option>
+                        <option value="Mozambique">Mozambique</option>
+                        <option value="Namibia">Namibia</option>
+                        <option value="Niger">Niger</option>
+                        <option value="Nigeria">Nigeria</option>
+                        <option value="Rwanda">Rwanda</option>
+                        <option value="Sao Tome and Principe">
+                          Sao Tome and Principe
+                        </option>
+                        <option value="Senegal">Senegal</option>
+                        <option value="Seychelles">Seychelles</option>
+                        <option value="Sierra Leone">Sierra Leone</option>
+                        <option value="Somalia">Somalia</option>
+                        <option value="South Africa">South Africa</option>
+                        <option value="South Sudan">South Sudan</option>
+                        <option value="Sudan">Sudan</option>
+                        <option value="Tanzania">Tanzania</option>
+                        <option value="Togo">Togo</option>
+                        <option value="Tunisia">Tunisia</option>
+                        <option value="Uganda">Uganda</option>
+                        <option value="Zambia">Zambia</option>
+                        <option value="Zimbabwe">Zimbabwe</option>
+                      </select>
+                    </div>
+
+                    <div class="form-group">
+                      <select class="form-control" id="membershipType">
+                        <option
+                          value="none"
+                          id="membershipType"
+                          class="form-control"
+                        >
+                          Membership Type
+                        </option>
+                        <option value="ordinary">Ordinary Membership</option>
+                        <option value="associate">Associate Membership</option>
+                        <option value="affiliate">Affiliate Membership</option>
+                      </select>
+                    </div>
+                  </div>
+
+                  <!-- <hr> -->
+
+                  <div class="form-group">
+                    <label for="fullnames">Full Names</label>
+                    <input type="text" class="form-control" id="fullnames" />
+                  </div>
+
+                  <div class="form-group">
+                    <label for="email">Email Address</label>
+                    <input type="email" class="form-control" id="email" />
+                  </div>
+                  <div class="form-group">
+                    <label for="phone">Phone Number</label>
+                    <input type="tel" class="form-control" id="phone" />
+                  </div>
+                  <div class="form-group">
+                    <label for="address">Postal Address</label>
+                    <input type="text" class="form-control" id="address" />
+                  </div>
+                  <div class="form-group">
+                    <label for="dob">Date of Birth</label>
+                    <input type="date" class="form-control" id="dob" />
+                  </div>
+
+                  <div class="form-group">
+                    <label for="image">Photo Portrait (JPG, JPEG, PNG)</label>
+                    <input
+                      type="file"
+                      class="form-control-file"
+                      id="image"
+                      accept=".jpg, .jpeg, .png"
+                    />
+                  </div>
+                  <div class="form-group">
+                    <label for="document">Resume (DOC, DOCX, PDF)</label>
+                    <input
+                      type="file"
+                      class="form-control-file"
+                      id="document"
+                      accept=".doc, .docx, .pdf"
+                    />
+                  </div>
+
+                  <div class="modal-footer">
+                    <button
+                      type="button"
+                      class="btn btn-secondary"
+                      data-dismiss="modal"
+                    >
+                      Close
+                    </button>
+                    <button
+                      type="button"
+                      onclick="apply()"
+                      class="btn btn-primary submit-btn"
+                    >
+                      Submit
+                    </button>
+                  </div>
+                </form>
+              </div>
+            </div>
+            <!-- Form with required fields -->
+          </div>
+        </div>
+
+        <script>
+          const form = document.getElementById("applicationForm");
+          form.addEventListener("submit", (e) => {
+            e.preventDefault();
+          });
+
+          function apply() {
+            const formData = new FormData(form);
+
+            // Extract and append form field values
+            const country = document.getElementById("country").value;
+            const membershipType =
+              document.getElementById("membershipType").value;
+            const fullnames = document.getElementById("fullnames").value;
+            const email = document.getElementById("email").value;
+            const phone = document.getElementById("phone").value;
+            const address = document.getElementById("address").value;
+            const dob = document.getElementById("dob").value;
+
+            formData.append("country", country);
+            formData.append("membershipType", membershipType);
+            formData.append("fullnames", fullnames);
+            formData.append("email", email);
+            formData.append("phone", phone);
+            formData.append("address", address);
+            formData.append("dob", dob);
+
+            // Append the image files
+            const imageInput = document.getElementById("image");
+            const documentInput = document.getElementById("document");
+
+            // Check if image file(s) are selected
+            if (imageInput.files.length > 0) {
+              for (const imageFile of imageInput.files) {
+                formData.append("image", imageFile);
+              }
+            }
+
+            // Check if document file(s) are selected
+            if (documentInput.files.length > 0) {
+              for (const documentFile of documentInput.files) {
+                formData.append("document", documentFile);
+              }
+            }
+
+            const message = "Application Process Started, Please wait...";
+            console.log(message);
+
+            const formApp = document.querySelector(".formApp");
+            const successMsg = document.querySelector(".sucess-message");
+            const submitBtn = document.querySelector(".submit-btn");
+
+            formApp.style.display = "none";
+            submitBtn.style.display = "none";
+            successMsg.innerHTML = `
+              <div class="text-center">
+                <h5 class="text-success">Application Submitted</h5>
+                <img src='https://i.pinimg.com/originals/32/b6/f2/32b6f2aeeb2d21c5a29382721cdc67f7.gif' width="300px" alt="success"/>
+              </div>
+              `;
+
+            fetch("http://localhost:8000/zamangric-application-form", {
+              method: "POST",
+              body: formData,
+            })
+              .then((response) => {
+                if (response.ok) {
+                  console.log("Form submitted successfully");
+                } else {
+                  console.log("Form submission failed");
+                }
+              })
+              .catch((error) => {
+                console.log("Error:", error);
+              });
+          }
+        </script>
+
+        <!--Membership Apply Modal -->
+      </div>
+      <!-- MODALS END HERE -->
+
+      <!-- Back to Top -->
+      <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"
+        ><i class="bi bi-arrow-up"></i
+      ></a>
     </div>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
-</body>
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+
+    <!-- new libs -->
+    <!-- <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script> -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+
+    <!-- Google Translate -->
+
+    <script type="text/javascript">
+      function googleTranslateElementInit() {
+        new google.translate.TranslateElement(
+          { pageLanguage: "en" },
+          "google_translate_element"
+        );
+      }
+    </script>
+    <script
+      type="text/javascript"
+      src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"
+    ></script>
+    <!-- End Google Translate -->
+  </body>
 </html>

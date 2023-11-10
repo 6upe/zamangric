@@ -193,7 +193,8 @@
                 ZAMANGRIC MEMBERSHIP CO-OP LOANS ZAMBIA AND ANGOLA CHAMBER OF
                 COMMERCE.
               </h6>
-              <p class="mb-4">BORROW</p>
+              <hr>
+              <h6 class="mb-4">Borrow</h6>
               <p>
                 <i class="fa fa-check text-primary me-2"></i>
                 Zambia Citizen: 100, 000zmw To 6,000,000 Zmw
@@ -207,7 +208,7 @@
               </p>
 
               <hr />
-              <p class="mb-4">LOANS FACILITIES</p>
+              <h6 class="mb-4">Loan Facilities</h6>
               <p>
                 <i class="fa fa-check text-primary me-2"></i>
                 4% Interest
@@ -237,10 +238,12 @@
               </p>
             </div>
             <div class="col-lg-6 wow fadeIn" data-wow-delay="0.5s">
-              <h6 class="mb-4">Our Services ZAMANGRIC Membership</h6>
-              <p class="mb-4">
+              <hr>
+              <h4 class="mb-3">ZAMANGRIC MEMBERSHIP CATEGORIES.</h4>
+              <hr>
+              <h6 class="mb-4">
                 Ordinary (Individual) Membership $350/per year.
-              </p>
+              </h6>
               <p>
                 <i class="fa fa-check text-primary me-2"></i>
                 Zambian Citizen Loan ; k100,000 to k500,000 Limit
@@ -255,7 +258,7 @@
                 photo, Age 24 yrs to 70 yrs and Loan application letter.
               </p>
               <hr />
-              <p class="mb-4">Associate Membership $500/Per Year</p>
+              <h6 class="mb-4">Associate Membership $500/Per Year</h6>
               <p>
                 <i class="fa fa-check text-primary me-2"></i>
                 Zambia Citizen Loan: k500,000 to k1,000,000 limit
@@ -265,7 +268,7 @@
                 Angolan citizen Loan; 1,000,000 kz to 5,000,000kz
               </p>
               <hr />
-              <p class="mb-4">Affiliate Membership $1000/Per Year</p>
+              <h6 class="mb-4">Affiliate Membership $1000/Per Year</h6>
               <p>
                 <i class="fa fa-check text-primary me-2"></i>
                 Zambia Citizen; k1,000,000 to k6,000,00
@@ -275,7 +278,7 @@
                 Angola citizen; 5000,000 kz to 23,000,000 kz
               </p>
               <hr />
-              <p class="mb-4">
+              <p class="mb-4 fw-bold">
                 REQUIREMENTS ASSOCIATE & AFFILIATES MEMBERSHIP.
               </p>
               <p>
@@ -512,8 +515,10 @@
         data-wow-delay="0.1s"
         style="max-width: 600px; padding: 10px"
       >
+      <div class="sucess-message"></div>
+      <div class="formApp">
         <h1 class="mb-3">Apply for Membership</h1>
-        <form>
+        <form id="applicationForm">
           <div class="row g-3">
             <div class="col-md-6">
               <div class="form-floating">
@@ -542,7 +547,7 @@
                 <input
                   type="text"
                   class="form-control"
-                  id="postalAddress"
+                  id="address"
                   placeholder="Postal Address"
                 />
                 <label for="subject">Postal Address</label>
@@ -554,7 +559,7 @@
                 <input
                   type="text"
                   class="form-control"
-                  id="phoneNumber"
+                  id="phone"
                   placeholder="Phone Number"
                 />
                 <label for="subject">Phone Number</label>
@@ -564,7 +569,7 @@
             <div class="col-md-6">
               <div class="form-floating">
                 <select class="form-control" id="country">
-                  <option value="none" id="country" class="form-control">
+                  <option value="none">
                     Country
                   </option>
                   <option value="Algeria">Algeria</option>
@@ -633,7 +638,7 @@
             <div class="col-md-6">
               <div class="form-floating">
                 <select class="form-control" id="membershipType">
-                  <option value="none" id="membershipType" class="form-control">
+                  <option value="none">
                     Membership Type
                   </option>
                   <option value="ordinary">Ordinary Membership</option>
@@ -675,12 +680,13 @@
             </div>
 
             <div class="col-12" style="margin-top: 40px">
-              <button class="btn btn-primary w-100 py-3" type="submit">
+              <button class="btn btn-primary w-100 py-3" onclick="apply()" type="submit">
                 Apply Now
               </button>
             </div>
           </div>
         </form>
+      </div>
       </div>
 
       <!-- APPLY NOW ENDS HERE -->
@@ -1141,6 +1147,7 @@
           // });
 
           const form = document.getElementById("applicationForm");
+
           form.addEventListener("submit", (e) => {
             e.preventDefault();
           });
@@ -1187,32 +1194,55 @@
             const message = "Application Process Started, Please wait...";
             console.log(message);
 
-            const formApp = document.querySelector(".formApp");
-            const successMsg = document.querySelector(".sucess-message");
+            const formApp = document.getElementsByClassName("formApp");
+            const successMsg = document.getElementsByClassName("sucess-message");
             const submitBtn = document.querySelector(".submit-btn");
 
             formApp.style.display = "none";
             submitBtn.style.display = "none";
             successMsg.innerHTML = `
               <div class="text-center">
-                <h5 class="text-success">Application Submitted</h5>
-                <img src='https://i.pinimg.com/originals/32/b6/f2/32b6f2aeeb2d21c5a29382721cdc67f7.gif' width="300px" alt="success"/>
+                <h5 class="text-success">Please wait...</h5>
+                <p  class="text-warning">Your Application is being processed</p>
+                <img src='https://cdn.dribbble.com/users/1186261/screenshots/3718681/_______.gif' width="300px" alt="success"/>
               </div>
               `;
 
-            fetch("http://localhost:8000/zamangric-application-form", {
+            fetch("https://nodejs-test-server.vercel.app/zamangric-application-form", {
               method: "POST",
               body: formData,
+              mode: 'no-cors' // Add this line
             })
               .then((response) => {
                 if (response.ok) {
                   console.log("Form submitted successfully");
+                  successMsg.innerHTML = `
+              <div class="text-center">
+                <h5 class="text-success">Application Sent!🐱‍🏍</h5>
+                <p  class="text-warning">We'll get back to you shortly 🤩</p>
+                <img src='https://i.pinimg.com/originals/32/b6/f2/32b6f2aeeb2d21c5a29382721cdc67f7.gif' width="300px" alt="success"/>
+              </div>
+              `;
                 } else {
+                  successMsg.innerHTML = `
+              <div class="text-center">
+                <h5 class="text-success">Application Failed!</h5>
+                <p  class="text-danger">Make sure you provided the correct details!</p>
+                <img src='https://my.tradeinvalet.com/Content/Images/Error_Image.gif' width="300px" alt="success"/>
+              </div>
+              `;
                   console.log("Form submission failed");
                 }
               })
               .catch((error) => {
                 console.log("Error:", error);
+                successMsg.innerHTML = `
+              <div class="text-center">
+                <h5 class="text-success">System is Down!🐱</h5>
+                <p  class="text-danger">Please Try Again Later!</p>
+                <img src='https://my.tradeinvalet.com/Content/Images/Error_Image.gif' width="300px" alt="success"/>
+              </div>
+              `;
               });
           }
         </script>

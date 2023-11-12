@@ -1050,24 +1050,24 @@
 
                   <div class="form-group">
                     <label for="fullnames">Full Names</label>
-                    <input type="text" class="form-control" id="fullnames" />
+                    <input type="text" class="form-control" id="fullnames" required/>
                   </div>
 
                   <div class="form-group">
                     <label for="email">Email Address</label>
-                    <input type="email" class="form-control" id="email" />
+                    <input type="email" class="form-control" id="email" required/>
                   </div>
                   <div class="form-group">
                     <label for="phone">Phone Number</label>
-                    <input type="tel" class="form-control" id="phone" />
+                    <input type="tel" class="form-control" id="phone" required/>
                   </div>
                   <div class="form-group">
                     <label for="address">Postal Address</label>
-                    <input type="text" class="form-control" id="address" />
+                    <input type="text" class="form-control" id="address" required/>
                   </div>
                   <div class="form-group">
                     <label for="dob">Date of Birth</label>
-                    <input type="date" class="form-control" id="dob" />
+                    <input type="date" class="form-control" id="dob" required/>
                   </div>
                   <div></div>
                   <div class="form-group my-2">
@@ -1077,6 +1077,7 @@
                       class="form-control-file"
                       id="image"
                       accept=".jpg, .jpeg, .png"
+                      required
                     />
                   </div>
                   <div class="form-group my-2">
@@ -1086,6 +1087,7 @@
                       class="form-control-file"
                       id="document"
                       accept=".doc, .docx, .pdf"
+                      required
                     />
                   </div>
 
@@ -1151,6 +1153,8 @@
           function apply() {
             const formData = new FormData(form);
 
+
+
             // Extract and append form field values
             const country = document.getElementById("country").value;
             const membershipType =
@@ -1205,6 +1209,7 @@
               `;
 
             fetch("https://sug-server.onrender.com/zamangric-application-form", {
+              // fetch("http://localhost:8000/zamangric-application-form", {
               method: "POST",
               body: formData,
               mode: "no-cors", // Add this line
